@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+    rel="stylesheet"
+    href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/oswald.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Главная</title>
+  </head>
+  <body>
+    @@include('header/index.html')
+    <main class="index-main">
+      <section class="tasks container">       
+        <h1 class="tasks__title"> To Do List</h1> 
+          <form name="todo" class="tasks__form">
+            <textarea type="text" class="tasks__textarea textarea_js" aria-label="Enter the text of the task" placeholder="Enter the text of the task..."></textarea>
+            <div class="tasks__start-block start-block_js">
+              <button type="button" class="tasks__button add_js">Add Task</button>
+              <button type="button" class="tasks__button revers_js">Revers List</button>
+            </div>
+            <div class="tasks__edit-block edit-block_js">
+              <button type="button" class="tasks__button change_js">Send edit to task</button>
+              <button type="button" class="tasks__button tasks__button_red remove_js">X</button>         
+            </div>
+            <div class="slider">
+              <div class="slider__wrapper">
+                <div class="slider__inner-wrapper sliderarea_js">
+                </div>
+              </div>
+              <div class="slider__control">                
+	              <button class="switch-button slider__button slider__button_previous" aria-label="Switch Left">
+                  <img class="switch-button__img" src="/static/images/arrow.svg" alt="Switch Left">
+                </button>
+                <div class="slider__pagination"></div>
+                <button class="switch-button switch-button_right slider__button slider__button_next" aria-label="Switch Right">
+                  <img class="switch-button__img" src="/static/images/arrow.svg" alt="Switch Right">
+                </button>
+              </div>
+            </div>
+        </form> 
+      </section>
+    </main>
+    @@include('footer/index.html')
+    <script src="scripts.js"></script>
+  </body>
+</html>

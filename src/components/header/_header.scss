@@ -1,0 +1,29 @@
+@import "../media";
+
+header {
+  background-color: $c_mercury;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  span {
+    padding-right: 20px;
+  }
+
+  a {
+    font-size: 18px;
+    line-height: 21px;
+    color: $c_black;
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    &:hover {
+      border-bottom: 1px solid #000;
+    }
+  }
+}
+
+

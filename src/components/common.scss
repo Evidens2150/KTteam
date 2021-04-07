@@ -1,0 +1,59 @@
+// Подключение компонентов
+@import "./header/header";
+@import "./footer/footer";
+// @import "./task/task";
+@import "./media";
+
+
+$media_laptop-big: 1400px;
+$media_laptop: 1200px;
+$media_tablet: 1024px;
+$media_mobile: 768px;
+$media_mobile-medium: 580px;
+$media_mobile-small: 425px;
+
+body {
+  font-family: Oswald, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  line-height: 0;
+  height: auto;
+}
+
+.container {
+  min-width: 200px;
+  max-width: 1020px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+

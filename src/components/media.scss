@@ -1,0 +1,38 @@
+
+@mixin media($min, $max) {
+    @if $max == 0 {
+      @media (min-width: $min) {
+        @content;
+      }
+    } @else if $min == 0 {
+      @media (max-width: ($max - 1px)) {
+        @content;
+      }
+    } @else {
+      @media (min-width: $min) and (max-width: ($max - 1px)) {
+        @content;
+      }
+    }
+  }
+
+$tr_duration: .3s;
+$tr_easing: ease-in-out;
+
+$media_laptop-big: 1400px;
+$media_laptop: 1200px;
+$media_tablet: 1024px;
+$media_mobile: 768px;
+$media_mobile-medium: 580px;
+$media_mobile-small: 425px;
+
+$c_black-default: #000000;
+$c_black: #070707;
+
+$c_gray: #828282;
+$c_mercury: #e5e5e5;
+$c_wild-sand: #f6f6f6;
+
+$c_white: #ffffff;
+
+$c_pomegranade: #eb3617;
+$c_malachite: #03bc3c;

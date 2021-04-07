@@ -1,0 +1,10 @@
+.task {
+    display: inline-block;
+    max-width: 90%;
+    border: 1px solid green;
+    padding: 5px;
+
+    &__button{
+        margin-left: 20px;
+    }
+}
